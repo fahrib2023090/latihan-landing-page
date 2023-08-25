@@ -9,6 +9,8 @@
     <!-- CSS Utama -->
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="navbar-container">
@@ -17,28 +19,25 @@
       </div>
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Apa yang Baru</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#newest-authors">News Templates</a></li>
+          <li><a href="#hot-news">Hot Templates</a></li>
+          <li><a href="#subscribe-news">Subscribe Template</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="beranda">
       <div class="content">
         <div class="content-description">
-          <h1 class="title">Dicoding Indonesia</h1>
+          <h1 class="title">Digital Wedding Indonesia</h1>
           <p>
-            Kami yakin pendidikan teknologi adalah fondasi bagi setiap bangsa
-            agar menjadi yang terdepan dalam menghadapi dunia digital. Dicoding
-            hadir sebagai platform pendidikan teknologi yang membantu
-            menghasilkan talenta digital berstandar global. Semua demi
-            mengakselerasi Indonesia agar menjadi yang terdepan.
+            Selamat datang di <b>Digital Wedding Indonesia</b>, 
+            tempat di mana keindahan undangan pernikahan terwujud. Kami paham bahwa pernikahan Anda adalah momen yang unik dan berharga. Dengan alat desain yang mudah digunakan, Anda dapat dengan bebas menyesuaikan setiap aspek undangan, dari tata letak hingga warna, sehingga setiap detail mencerminkan kepribadian dan gaya Anda.
           </p>
           <button>Lebih lanjut</button>
         </div>
         <div class="content-image">
-          <img src="img/circle-g.jpg" alt="Dicoding Indonesia" />
+          <img src="img/4.png" alt="Dicoding Indonesia" />
         </div>
       </div>
       <aside>
@@ -60,5 +59,166 @@
         </div>
       </aside>
     </main>
+    <section id="newest-authors">
+      <div class="newest-authors">
+        <div id="newest-author-title">
+          <h1 class="newest-author-title">Template Terbaru</h1>
+          <span class="newest-author-description">berikut beberapa template terbaru</span>
+        </div>
+        <div class="newest-authors-contents">
+          <ul>
+            <li>
+              <a href="#" class="news-author-link">
+                <div class="newest-authors-contents card content">
+                  <img class="author-pict" src="img/template/5.png" alt="" srcset="">
+                  <h2>Jhone Doe</h2>
+                  <span>@jhondoe</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="news-author-link">
+                <div class="newest-authors-contents card content">
+                  <img class="author-pict" src="img/template/1.png" alt="" srcset="">
+                  <h2>Jhone Doe</h2>
+                  <span>@jhondoe</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="news-author-link">
+                <div class="newest-authors-contents card content">
+                  <img class="author-pict" src="img/template/2.png" alt="" srcset="">
+                  <h2>Jhone Doe</h2>
+                  <span>@jhondoe</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="news-author-link">
+                <div class="newest-authors-contents card content">
+                  <img class="author-pict" src="img/template/3.png" alt="" srcset="">
+                  <h2>Jhone Doe</h2>
+                  <span>@jhondoe</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="news-author-link">
+                <div class="newest-authors-contents card content">
+                  <img class="author-pict" src="img/template/4.png" alt="" srcset="">
+                  <h2>Jhone Doe</h2>
+                  <span>@jhondoe</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="hot-news">
+      <div id="container-hot-news" class="container-hot-news">
+        <div class="news-hot-title">
+          <h1>Hotest News</h1>
+          <span>Discover the hotest News all topics.</span>
+        </div>
+        <div id="news-hot-contents" class="news-hot-contents">
+          <div class="hot-news-first">
+            <div class="card card-hot-news-first">
+              <img class="img-responsive img-hot-news-first" src="img/background-b.jpg" alt="">
+              <div class="description" style="margin-left: 10px;">
+                <span>24 Agustus 2023</span>
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos consectetur vero voluptatem eaque quibusdam nemo corrupti nam, saepe deleniti veniam voluptate, magni quis officiis facilis quasi, delectus porro obcaecati!</p>
+              </div>
+            </div>
+          </div>
+          <div class="hot-news-lists">
+            <div class="card card-hot-news-list">
+              <div class="description">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <img class="img-responsive img-hot-news-list" src="img/background-b.jpg" alt="">
+            </div>
+            <div class="card card-hot-news-list">
+              <div class="description">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <img class="img-responsive img-hot-news-list" src="img/background-c.jpg" alt="">
+            </div>
+            <div class="card card-hot-news-list">
+              <div class="description">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <img class="img-responsive img-hot-news-list" src="img/background-d.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimoni">
+      <div id="container-testimoni"class="container-testimoni">
+        test
+      </div>
+    </section>
+    <section id="subscribe-news">
+      <div class="container-subscribe-news">
+        <div class="cta-subscribe-news">
+          <h2>Percayakan Undanganmu <br>Kepada Kami!</h2>
+          <p>Read and share new perspectives on just about any topic. Everyone's welcome.          </p>
+          <button>BUAT UNDANGAN</button>
+        </div>
+        <div class="background-subscribe-news">
+          <img class="img-responsive img-subscribe" src="img/subscribe-news.png" alt="">
+        </div>
+      </div>
+    </section>
+    <footer style="background: #2D3E50;">
+      <center><a style="color:white" href="https://masfhr.info">Muhammad Fahrizal - </a> <span><a href="mailto:B2023090@dicoding.org"
+      style="color:white"> B2023090@dicoding.org</span></a></center>
+    </footer>
   </body>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    function myFunction(x) {
+
+      // If media query matches
+      if (x.matches) { 
+        document.getElementsByClassName('hot-news-lists')[0].style.display = 'none';
+        for (let index = 0; index < 2; index++) {
+            const node = document.getElementsByClassName("news-hot-contents")[0];
+            const clone = node.cloneNode(true);
+            console.log(clone);
+            document.getElementById("container-hot-news").append(clone);
+          }
+      }
+    }
+    
+    var x = window.matchMedia("(max-width: 768px)")
+    myFunction(x) // Call listener function at run first time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+    document.querySelector('#subscribe-news').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    </script>
 </html>
