@@ -15,6 +15,11 @@ body {
     flex-direction: column;
 }
 
+section {
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
 .img-responsive {
     width: 100%;
     height: auto;
@@ -33,7 +38,7 @@ header.navbar-container {
 }
 
 header.navbar-container .logo img {
-    width: 150px;
+    width: 250px;
 }
 
 header.navbar-container .nav-list ul {
@@ -420,7 +425,77 @@ section#subscribe-news {
 }
 /* End Subscribe News */
 
+/* Testimonials */
+.container-testimonials {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
 
+.container-testimonials > h1 {
+    align-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container-testimonials > span {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    margin-top: -25px;
+    color: #2d3e50;
+}
+
+.row-testimonials {
+    margin-block-start: 3.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row-testimonials > ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+    list-style-type: none;
+}
+
+.row-testimonials > ul >li {
+    height: auto;
+    width: 50%;
+}
+
+.card.content.content-testimonial {
+    background: #425c77c4;
+}
+
+.card.content > .img-testimonial {
+    max-height: 230px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.footer-testimonial{
+    margin-bottom: 10px;
+}
+
+.footer-testimonial > span:before {
+    content: '';
+    margin-inline-end: 1px;
+}
+
+.footer-testimonial > span {
+    line-height: 1;
+}
+
+/* End Testimonials */
+
+/* Footer */
+footer {
+    padding-block: 1rem;
+}
 
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -499,6 +574,11 @@ section#subscribe-news {
         width: 110%;
     }
 
+    .row-testimonials > ul >li {
+        height: auto;
+        width: 75%;
+    }
+
     .card.card-hot-news-first > .description > h2 {
         line-height: 1;
     }
@@ -521,8 +601,14 @@ section#subscribe-news {
         gap: 2rem;
     }
 
+    .row-testimonials > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer {
-        background: #2D3E50;
         font-size: 25px;
+        position: fixed;
+        bottom: 0;
     }
 }
