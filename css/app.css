@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-section {
+article {
     margin: 20px 0px;
     padding: 20px 0px;
 }
@@ -134,14 +134,14 @@ main .content .content-image img {
     width: 300px;
 }
 
-/* Section Newest Authors & Contents */
+/* article Newest Authors & Contents */
 /* Newest Authors */
-section#newest-authors {
+article#newest-authors {
     width: 100%;
     background: #f4f4f5;
 }
 
-section .newest-authors {
+article .newest-authors {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@ span.newest-author-description {
 /* End Newest Authors */
 
 /* News Hot Contents */
-section#hot-news {
+article#hot-news {
     background: #ffffff;
     width: 100%;
     margin-inline: auto;
@@ -454,7 +454,7 @@ aside .social-media ul li a img {
 /* End Testimonials */
 
 /* Subscribe News */
-section#subscribe-news {
+article#subscribe-news {
     background: #E9F4F6;
     width: 100%;
     margin-inline: auto;
@@ -570,7 +570,7 @@ footer {
         line-height: 1;
     }
 
-    section#hot-news {
+    article#hot-news {
         flex-direction: column;
         padding: 1rem 2rem;
     }
